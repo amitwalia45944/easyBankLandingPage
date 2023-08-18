@@ -17,7 +17,6 @@ ul {
 .container {
     margin: 1rem 0rem;
     margin-left: 8rem;
-    /* margin-right: 8rem; */
 }
 
 .flex {
@@ -50,11 +49,14 @@ ul {
 
 }
 
+nav{
+    display: flex;
+}
+
 .header-main-container {
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    flex-basis: 100%;
     background-color: rgb(194, 190, 190);
     box-shadow: 0 0 20px solid gainsboro;
 }
@@ -131,7 +133,6 @@ ul {
     margin-top: 2rem;
 }
 
-
 .main-section1 .header-left p {
     margin-top: 1rem;
 }
@@ -162,10 +163,7 @@ ul {
 }
 
 .cards-container {
-    /* flex-wrap: wrap; */
     gap: 2rem;
-    /* margin-right: 8rem; */
-    /* margin-left: 8rem; */
 }
 
 .card-header img {
@@ -228,7 +226,7 @@ ul {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
 
     nav .header-button {
         display: none;
