@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-}
-
 a {
     text-decoration: none;
     display: inline-block;
@@ -31,9 +24,8 @@ ul {
 .flex {
     display: flex;
     justify-content: center;
-}
 
-.hover-link {}
+}
 
 .hover-link:hover {
     cursor: pointer;
@@ -53,14 +45,30 @@ ul {
     background-color: red;
 }
 
-
 .main-nav {
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
+.header-main-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.main-nav .header-button {
+    margin: 0;
+}
 
 .nav-toggle img {
     width: 4vw;
+    margin-right: 2rem;
+    display: none;
+}
+
+.close-toggle img {
+    width: 4vw;
+    margin-right: 2rem;
     display: none;
 }
 
@@ -75,8 +83,6 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: -2rem;
-    /* margin-right: -4rem; */
-
 }
 
 
@@ -101,6 +107,7 @@ ul {
 
 
 /*header part ends*/
+
 
 /*main part*/
 
@@ -158,6 +165,8 @@ ul {
     justify-content: space-evenly;
     background-color: gray;
     align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .sub-footer-1 {
@@ -168,7 +177,6 @@ ul {
 
 .sub-footer-2 ul {
     flex-direction: column;
-
 }
 
 .sub-footer-2 ul li {
@@ -196,32 +204,60 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
-
-
-    .nav-toggle img {
-        width: 2vw;
-        display: block
+    nav .header-button {
+        display: none;
     }
 
+    .nav-toggle img {
+        display: block;
+    }
+
+    .flex {
+        gap: 2rem;
+    }
+
+    header {
+        margin-top: 15%;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 70%;
+        padding-block: 20px;
+        text-align: center;
+        transition: 0.2s ease-in-out;
+    }
+
+    .nav-links.active {
+        left: 1em;
+        margin: 1rem;
+    }
 
     .nav-links ul {
         flex-direction: column;
-        display: none;
-        margin-right: 2rem;
     }
 
     .header-section {
         flex-direction: column;
-        margin: auto;
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .header-section .header-left {
         order: 2;
-
     }
 
     .header-section .header-right {
         order: 1;
+    }
+
+    .header-section .header-left {
+        display: flex;
+        flex-direction: column;
     }
 
     .main-section1 {
@@ -279,7 +315,5 @@ ul {
         align-items: center;
         margin-top: 2rem;
     }
-
-
 
 }

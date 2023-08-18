@@ -27,9 +27,10 @@
             <li><a href="#" class="hover-link">Contact</a></li>
             <li><a href="#" class="hover-link">Blog</a></li>
             <li><a href="#" class="hover-link">Careers</a></li>
-            <li><a href="#" class="hover-link header-button primary-button">Request Invite</a></li>
           </ul>
         </div>
+
+        <a href="#" class="hover-link header-button primary-button">Request Invite</a>
 
         <a href="#" class="nav-toggle hover-link" id="nav-toggle">
           <img src="./images/bars-solid.svg" alt="hamberger">
@@ -154,9 +155,9 @@
 
 
   </main>
+
+
   <footer>
-
-
     <div class="inner-container flex">
       <div class="sub-footer-1 flex">
         <div class="inner-1">
@@ -192,7 +193,6 @@
 
       </div>
 
-
       <div class="sub-footer-3">
         <ul class="flex">
           <li><a href="#" class="hover-link">Careers</a></li>
@@ -211,6 +211,17 @@
       </div>
     </div>
   </footer>
+  
+
+  <script>
+    const toggleButton = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    })
+  </script>
+
 </body>
 
 </html>
