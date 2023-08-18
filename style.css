@@ -260,8 +260,9 @@ ul {
 
     .header-section .header-right {
         margin-top: -10rem;
-        width: 120%;
-        margin-right: 16rem;
+        width: 100%;
+        margin-left: 8rem;
+        margin-right: 27rem;
     }
 
     .nav-links {
@@ -392,5 +393,4 @@ ul {
         align-items: center;
         gap: 1rem;
     }
-
 }
