@@ -49,7 +49,7 @@ ul {
 
 }
 
-nav{
+nav {
     display: flex;
 }
 
@@ -228,6 +228,11 @@ nav{
 
 @media screen and (max-width: 375px) {
 
+    .main-nav {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
     nav .header-button {
         display: none;
     }
@@ -239,11 +244,13 @@ nav{
     .flex {
         gap: 2rem;
     }
-
+    
     header {
-        margin-top: 15%;
+        margin-top: -10%;
+        display: flex;   
+        width: 120vw;
+        margin-left: -2rem; 
     }
-
 
     .header-section {
         background-image: url("./images/bg-intro-mobile.svg");
@@ -256,18 +263,24 @@ nav{
         justify-content: center;
     }
 
-    .header-section .header-right {
+    .header-section .header-left p {
+        margin-top: 0;
+    }
+
+    .header-section .header-right img {
         margin-top: -10rem;
-        width: 100%;
-        margin-left: 8rem;
-        margin-right: 27rem;
+        /*image width*/
+        width: 90%;
+        margin-left: 1rem;
+        margin-top: -8rem;
+    
     }
 
     .nav-links {
         position: absolute;
         background-color: white;
         left: -100%;
-        top: 100%;
+        top: 5%;
         width: 70%;
         padding-block: 20px;
         text-align: center;
